@@ -1,0 +1,24 @@
+{
+  "name": "practicingBasics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "node-sass main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewrey/practicingBasicsSection5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewrey/practicingBasicsSection5/issues"
+  },
+  "homepage": "https://github.com/andrewrey/practicingBasicsSection5#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
