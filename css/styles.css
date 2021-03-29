@@ -140,6 +140,14 @@ body {
   width: 30%;
   vertical-align: top; }
 
+.key-features__list__item__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: 0 auto; }
+
 .key-features__list__item__description {
   text-align: center;
   font-weight: bold;
