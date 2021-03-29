@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:watch": "node-sass main.scss css/styles.css -w"
+    "sass:watch": "node-sass main.scss css/styles.css -w",
+    "sass:watch:shared": "node-sass shared.scss css/shared.css -w",
+    "sass:watch:packages": "node-sass packages/packages.scss css/packages.css -w"
   },
   "repository": {
     "type": "git",
