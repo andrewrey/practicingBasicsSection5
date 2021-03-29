@@ -188,3 +188,29 @@ body {
   color: white;
   font-size: 20px;
 }
+
+.main-footer {
+  background-color: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover,
+    &:active {
+      color: #ccc;
+    }
+  }
+}

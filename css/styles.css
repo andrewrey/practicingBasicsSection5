@@ -153,3 +153,23 @@ body {
   font-weight: bold;
   color: white;
   font-size: 20px; }
+
+.main-footer {
+  background-color: black;
+  padding: 32px;
+  margin-top: 48px; }
+
+.main-footer__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px; }
+  .main-footer__link a {
+    text-decoration: none;
+    color: white; }
+    .main-footer__link a:hover, .main-footer__link a:active {
+      color: #ccc; }
