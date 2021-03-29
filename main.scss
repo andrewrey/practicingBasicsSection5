@@ -147,3 +147,35 @@ body {
     outline: none;
   }
 }
+
+#key-features {
+  background-color: #ff1b68;
+  margin: {
+    top: 80px;
+  }
+  padding: 16px;
+  .section-title {
+    color: white;
+    margin: 32px;
+  }
+}
+
+.key-features__list {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.key-features__list__item {
+  color: white;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.key-features__list__item__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
