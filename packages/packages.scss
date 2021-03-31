@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: -1;
+  z-index: -2;
 }
 
 main {
@@ -16,10 +16,22 @@ main {
   }
   margin: 16px 0;
   width: 80%;
+  position: relative;
+  z-index: -1;
   &:hover,
   &:active {
     border-color: #ff5454;
     box-shadow: 2px 2px 4px rgba(black, 0.5);
+  }
+  .packages__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 12px;
+    color: white;
+    background: #ff5454;
+    padding: 8px;
   }
 }
 
