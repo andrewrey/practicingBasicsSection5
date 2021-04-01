@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: -2; }
+  z-index: -1; }
 
 main {
   padding-top: 32px; }
@@ -13,8 +13,7 @@ main {
     border-left: none;
   margin: 16px 0;
   width: 80%;
-  position: relative;
-  z-index: -1; }
+  position: relative; }
   .packages:hover, .packages:active {
     border-color: #ff5454;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
