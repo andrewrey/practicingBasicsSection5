@@ -10,8 +10,8 @@ const mobileNav = document.querySelector(".mobile-nav");
 // Close function
 
 const closeModal = () => {
-  backdrop.style.display = "none";
-  modal.style.display = "none";
+  backdrop.classList.remove("open");
+  modal.classList.remove("open");
 };
 
 // Event Listeners //
@@ -19,14 +19,17 @@ const closeModal = () => {
 // choose plan buttons
 for (let i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener("click", () => {
-    backdrop.style.display = "block";
-    modal.style.display = "block";
+    // backdrop.style.display = "block";
+    // modal.style.display = "block";
+
+    backdrop.classList.add("open");
+    modal.classList.add("open");
   });
 }
 
 // backdrop (close)
 backdrop.addEventListener("click", () => {
-  mobileNav.style.display = "none";
+  mobileNav.classList.remove("open");
   closeModal();
 });
 
@@ -35,6 +38,6 @@ noButton.addEventListener("click", closeModal);
 
 // toggleButton (open mobile nav)
 toggleButton.addEventListener("click", () => {
-  mobileNav.style.display = "block";
-  backdrop.style.display = "block";
+  mobileNav.className += " open";
+  backdrop.className += " open";
 });
