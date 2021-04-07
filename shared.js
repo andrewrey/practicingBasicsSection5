@@ -11,7 +11,9 @@ const mobileNav = document.querySelector(".mobile-nav");
 
 const closeModal = () => {
   backdrop.classList.remove("open");
-  modal.classList.remove("open");
+  if (modal) {
+    modal.classList.remove("open");
+  }
 };
 
 // Event Listeners //
@@ -34,7 +36,10 @@ backdrop.addEventListener("click", () => {
 });
 
 // modal no button (close)
-noButton.addEventListener("click", closeModal);
+
+if (noButton) {
+  noButton.addEventListener("click", closeModal);
+}
 
 // toggleButton (open mobile nav)
 toggleButton.addEventListener("click", () => {
