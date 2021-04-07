@@ -2,6 +2,8 @@ const backdrop = document.querySelector(".backdrop");
 const modal = document.querySelector(".modal");
 const selectPlanButtons = document.querySelectorAll(".plan button");
 const noButton = document.querySelector(".modal__actions button");
+const toggleButton = document.querySelector(".toggle-button");
+const mobileNav = document.querySelector(".mobile-nav");
 
 // Functions //
 
@@ -23,7 +25,16 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
 }
 
 // backdrop (close)
-backdrop.addEventListener("click", closeModal);
+backdrop.addEventListener("click", () => {
+  mobileNav.style.display = "none";
+  closeModal();
+});
 
 // modal no button (close)
 noButton.addEventListener("click", closeModal);
+
+// toggleButton (open mobile nav)
+toggleButton.addEventListener("click", () => {
+  mobileNav.style.display = "block";
+  backdrop.style.display = "block";
+});
