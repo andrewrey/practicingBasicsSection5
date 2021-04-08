@@ -30,6 +30,17 @@
   padding: 1rem;
   margin: 0.5rem 0;
   width: 100%; }
+  @media (min-width: 40rem) {
+    .plan {
+      display: inline-block;
+      width: 30%;
+      min-width: 13rem;
+      max-width: 25rem;
+      vertical-align: middle; }
+      .plan-list {
+        text-align: center; }
+      .plan--highlighted {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); } }
   .plan__title {
     color: #0e4f1f; }
   .plan__price {
