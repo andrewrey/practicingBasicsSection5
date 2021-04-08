@@ -7,7 +7,7 @@
   // background-clip: border-box;
   // setting border-box once will automaticall set it for both origin and clip
   background: linear-gradient(0deg, rgba(128, 109, 36, 0.6) 10%, transparent),
-    url("../images/freedom.jpg") left 10% bottom 85% / cover no-repeat
+    url("../images/freedom.jpg") left 10% bottom 78% / cover no-repeat
       border-box,
     #ff1b68;
   // background-image: radial-gradient(ellipse, red, blue 80%, green);
@@ -15,19 +15,27 @@
   height: 33vh;
   margin-top: 2.66rem;
   position: relative;
+  @media (min-width: 40rem) {
+    height: 40vh;
+    background-position: 50% 24%;
+  }
+}
+
+#product-overview h1 {
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Anton", sans-serif;
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+  @media (min-width: 40rem) {
+    font-size: 3rem;
+  }
 }
 
 .section-title {
   color: #2ddf5c;
   text-align: center;
-}
-
-#product-overview h1 {
-  color: white;
-  font-family: "Anton", sans-serif;
-  position: absolute;
-  bottom: 0%;
-  left: 5%;
 }
 .plan-list {
   width: 80%;
