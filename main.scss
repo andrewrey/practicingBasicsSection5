@@ -7,7 +7,7 @@
   // background-clip: border-box;
   // setting border-box once will automaticall set it for both origin and clip
   background: linear-gradient(0deg, rgba(128, 109, 36, 0.6) 10%, transparent),
-    url("../images/freedom.jpg") left 10% bottom 78% / cover no-repeat
+    url("../images/freedom.jpg") left 10% bottom 74% / cover no-repeat
       border-box,
     #ff1b68;
   // background-image: radial-gradient(ellipse, red, blue 80%, green);
@@ -16,8 +16,8 @@
   margin-top: 2.66rem;
   position: relative;
   @media (min-width: 40rem) {
-    height: 40vh;
-    background-position: 50% 24%;
+    height: 50vh;
+    background-position: 50% 25%;
   }
 }
 
