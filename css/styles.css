@@ -8,6 +8,9 @@
     #product-overview {
       height: 50vh;
       background-position: 50% 25%; } }
+  @media (min-width: 60rem) {
+    #product-overview {
+      height: 55vh; } }
 
 #product-overview h1 {
   color: white;
@@ -19,6 +22,9 @@
   @media (min-width: 40rem) {
     #product-overview h1 {
       font-size: 3rem; } }
+  @media (min-width: 60rem) {
+    #product-overview h1 {
+      font-size: 5rem; } }
 
 .section-title {
   color: #2ddf5c;
