@@ -8,6 +8,10 @@
 
 main {
   padding-top: 2rem; }
+  @media (min-width: 40rem) {
+    main {
+      max-width: 1500px;
+      margin: 3rem auto; } }
 
 .packages {
   border: 4px solid #0e4f1f;
@@ -15,6 +19,9 @@ main {
   margin: 1rem 0;
   width: 80%;
   position: relative; }
+  @media (min-width: 1500px) {
+    .packages {
+      border-left: 4px solid #0e4f1f; } }
   .packages:hover, .packages:active {
     border-color: #ff5454;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
@@ -37,8 +44,14 @@ main {
   float: right;
   border-left: 4px solid #0e4f1f;
   border-right: none; }
+  @media (min-width: 1500px) {
+    #free {
+      border-right: 4px solid #0e4f1f; } }
   #free:hover, #free:active {
     border-left-color: #ff5454; }
+    @media (min-width: 1500px) {
+      #free:hover, #free:active {
+        border-right-color: #ff5454; } }
 
 .clearfix {
   clear: both; }
