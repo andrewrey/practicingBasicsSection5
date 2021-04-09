@@ -15,7 +15,7 @@
   height: 33vh;
   margin-top: 2.66rem;
   position: relative;
-  @media (min-width: 40rem) {
+  @media (min-width: 40rem) and (min-height: 60rem) {
     height: 50vh;
     background-position: 50% 25%;
   }
