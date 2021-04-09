@@ -2,7 +2,6 @@
   background: linear-gradient(0deg, rgba(128, 109, 36, 0.6) 10%, transparent), url("../images/freedom.jpg") left 10% bottom 74%/cover no-repeat border-box, #ff1b68;
   width: 100vw;
   height: 33vh;
-  margin-top: 2.66rem;
   position: relative; }
   @media (min-width: 40rem) and (min-height: 40rem) {
     #product-overview {

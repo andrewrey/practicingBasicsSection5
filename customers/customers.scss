@@ -1,3 +1,7 @@
+main {
+  padding-top: 2.5rem;
+}
+
 .testimonial {
   font-size: 1.2rem;
   @media (min-width: 40rem) {
@@ -11,10 +15,6 @@
 //   margin: auto;
 // }
 
-.testimonial:first-of-type {
-  margin-top: 6rem;
-}
-
 .testimonial__image-container {
   width: 100%;
   max-width: 40rem;
@@ -22,7 +22,7 @@
   @media (min-width: 40rem) {
     display: inline-block;
     vertical-align: middle;
-    width: 65%;
+    width: 63%;
   }
 }
 

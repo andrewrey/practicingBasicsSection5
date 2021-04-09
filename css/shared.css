@@ -123,6 +123,10 @@ body::-webkit-scrollbar {
   .button:focus {
     outline: none; }
 
+main {
+  margin-top: 3.5rem;
+  min-height: calc(100vh - 3.5rem - 8rem); }
+
 .main-footer {
   background-color: black;
   padding: 2rem;
