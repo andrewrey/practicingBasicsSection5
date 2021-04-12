@@ -9,11 +9,28 @@ main {
 }
 
 .signup-form {
+  padding: 1rem;
+  @media (min-width: 40rem) {
+    margin: auto;
+    width: 28rem;
+  }
+  label {
+    font-weight: bold;
+  }
   label,
   input,
   select {
     display: block;
     margin-top: 1rem;
     width: 100%;
+  }
+  input[id*="terms"],
+  input[id*="terms"] + label {
+    display: inline-block;
+    width: auto;
+  }
+  button[type="submit"] {
+    display: block;
+    margin-top: 1rem;
   }
 }
