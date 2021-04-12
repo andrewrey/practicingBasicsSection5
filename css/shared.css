@@ -122,6 +122,11 @@ body::-webkit-scrollbar {
     color: #0e4f1f; }
   .button:focus {
     outline: none; }
+  .button[disabled] {
+    cursor: not-allowed;
+    border: #5a5a5a;
+    background: #ccc;
+    color: #a1a1a1; }
 
 main {
   margin-top: 3.5rem;

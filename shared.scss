@@ -146,6 +146,12 @@ body::-webkit-scrollbar {
   &:focus {
     outline: none;
   }
+  &[disabled] {
+    cursor: not-allowed;
+    border: rgb(90, 90, 90);
+    background: #ccc;
+    color: #a1a1a1;
+  }
 }
 
 // Main //
