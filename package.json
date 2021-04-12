@@ -8,7 +8,8 @@
     "sass:watch": "node-sass main.scss css/styles.css -w",
     "sass:watch:shared": "node-sass shared.scss css/shared.css -w",
     "sass:watch:packages": "node-sass packages/packages.scss css/packages.css -w",
-    "sass:watch:customers": "node-sass customers/customers.scss css/customers.css -w"
+    "sass:watch:customers": "node-sass customers/customers.scss css/customers.css -w",
+    "sass:watch:hosting": "node-sass start-hosting/start-hosting.scss css/start-hosting.css -w"
   },
   "repository": {
     "type": "git",
