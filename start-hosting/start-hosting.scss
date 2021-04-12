@@ -14,6 +14,7 @@ main {
     margin: auto;
     width: 28rem;
   }
+
   label {
     font-weight: bold;
   }
@@ -28,6 +29,7 @@ main {
       border-color: #2ddf5c;
     }
   }
+
   label,
   input,
   select {
@@ -60,5 +62,11 @@ main {
   button[type="submit"] {
     display: block;
     margin-top: 1rem;
+  }
+  input.invalid,
+  select.invalid,
+  :invalid {
+    border: 1px solid red !important;
+    background: rgb(241, 166, 166);
   }
 }
