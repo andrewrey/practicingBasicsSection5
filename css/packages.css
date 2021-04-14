@@ -86,6 +86,5 @@ main {
   border: 1px solid #0e4f1f;
   padding: 1rem;
   background: white;
-  font-size: 1.25rem;
-  font-family: "AnonymousPro", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  font: 1.25rem "AnonymousPro", sans-serif; }
