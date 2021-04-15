@@ -25,8 +25,7 @@
 
 .plan-list {
   display: flex;
-  flex-direction: column;
-  border: 2px solid red; }
+  flex-direction: column; }
   @media (min-width: 40rem) {
     .plan-list {
       flex-direction: row;
@@ -93,10 +92,16 @@
     margin: 2rem; }
 
 .key-features__list {
-  text-align: center;
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 40rem) {
+    .key-features__list {
+      flex-direction: row;
+      justify-content: center; } }
 
 .key-features__list__item {
   color: white;
@@ -104,10 +109,8 @@
   margin: 10px 0; }
   @media (min-width: 40rem) {
     .key-features__list__item {
-      display: inline-block;
       width: 30%;
-      max-width: 25rem;
-      vertical-align: top; } }
+      max-width: 25rem; } }
 
 .key-features__list__item__image {
   background: #ffcede;
