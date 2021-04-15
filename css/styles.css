@@ -40,11 +40,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  justify-content: space-between;
+  height: 28rem; }
   @media (min-width: 40rem) {
     .plan {
-      height: 380px;
       margin: 0.5rem 0;
       width: 30%;
       min-width: 13rem;
@@ -70,14 +69,13 @@
     color: white; }
     @media (min-width: 40rem) {
       .plan--highlighted {
-        height: 400px;
-        z-index: 0; } }
+        z-index: 0;
+        height: 30rem; } }
     .plan--highlighted .plan__price {
       color: #0e4f1f; }
     .plan--highlighted .plan__title {
       color: white; }
   .plan__annotation {
-    width: 100%;
     background: white;
     color: #19b84c;
     padding: 0.5rem;

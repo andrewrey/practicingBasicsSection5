@@ -55,11 +55,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  height: 28rem;
 
   @media (min-width: 40rem) {
-    height: 380px;
     margin: 0.5rem 0;
     width: 30%;
     min-width: 13rem;
@@ -89,8 +88,8 @@
   }
   &--highlighted {
     @media (min-width: 40rem) {
-      height: 400px;
       z-index: 0;
+      height: 30rem;
     }
     background: #19b84c;
     color: white;
@@ -102,7 +101,6 @@
     }
   }
   &__annotation {
-    width: 100%;
     background: white;
     color: #19b84c;
     padding: 0.5rem;
