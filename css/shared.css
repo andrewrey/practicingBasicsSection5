@@ -33,9 +33,6 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: space-between; }
 
-.main-header > div {
-  border: 1px solid red; }
-
 .main-header__brand {
   color: #0e4f1f;
   text-decoration: none;
@@ -67,8 +64,7 @@ body::-webkit-scrollbar {
   margin: 0.6rem 0; }
 
 .main-nav {
-  display: none;
-  border: 1px solid blue; }
+  display: none; }
   @media (min-width: 40rem) {
     .main-nav {
       display: flex; } }
