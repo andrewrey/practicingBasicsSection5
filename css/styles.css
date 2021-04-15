@@ -45,7 +45,7 @@
   @media (min-width: 40rem) {
     .plan {
       height: 380px;
-      margin: 0.5rem 1rem;
+      margin: 0.5rem 0;
       width: 30%;
       min-width: 13rem;
       max-width: 25rem; }
@@ -70,7 +70,8 @@
     color: white; }
     @media (min-width: 40rem) {
       .plan--highlighted {
-        height: 400px; } }
+        height: 400px;
+        z-index: 0; } }
     .plan--highlighted .plan__price {
       color: #0e4f1f; }
     .plan--highlighted .plan__title {
