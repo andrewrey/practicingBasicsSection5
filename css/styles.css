@@ -23,21 +23,37 @@
   color: #2ddf5c;
   text-align: center; }
 
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red; }
+  @media (min-width: 40rem) {
+    .plan-list {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
+
 .plan {
   background-color: #d5ffdc;
   text-align: center;
   padding: 1rem;
   margin: 0.5rem 0;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
   @media (min-width: 40rem) {
     .plan {
-      display: inline-block;
+      height: 380px;
+      margin: 0.5rem 1rem;
       width: 30%;
       min-width: 13rem;
-      max-width: 25rem;
-      vertical-align: middle; }
-      .plan-list {
-        text-align: center; }
+      max-width: 25rem; }
+      .plan h1,
+      .plan h2,
+      .plan h3 {
+        margin: 0.5rem 0; }
       .plan--highlighted {
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); } }
   .plan__title {
@@ -53,11 +69,15 @@
   .plan--highlighted {
     background: #19b84c;
     color: white; }
+    @media (min-width: 40rem) {
+      .plan--highlighted {
+        height: 400px; } }
     .plan--highlighted .plan__price {
       color: #0e4f1f; }
     .plan--highlighted .plan__title {
       color: white; }
   .plan__annotation {
+    width: 100%;
     background: white;
     color: #19b84c;
     padding: 0.5rem;
