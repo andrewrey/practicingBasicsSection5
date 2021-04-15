@@ -84,9 +84,7 @@ body::-webkit-scrollbar {
   display: none;
   border: 1px solid blue;
   @media (min-width: 40rem) {
-    display: inline-block;
-    text-align: right;
-    vertical-align: middle;
+    display: flex;
   }
 }
 
@@ -94,11 +92,12 @@ body::-webkit-scrollbar {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .main-nav__item {
-  display: inline-block;
   margin: 0 1rem;
+  border: 1px solid yellow;
 }
 
 .main-nav__item a,
