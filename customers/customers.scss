@@ -7,6 +7,9 @@ main {
   @media (min-width: 40rem) {
     margin: 3rem auto;
     max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 
@@ -20,8 +23,6 @@ main {
   max-width: 40rem;
   box-shadow: 3px 3px 3px 3px rgba(black, 0.4);
   @media (min-width: 40rem) {
-    display: inline-block;
-    vertical-align: middle;
     width: 63%;
   }
 }
@@ -35,8 +36,6 @@ main {
   padding: 0.9rem;
 
   @media (min-width: 40rem) {
-    display: inline-block;
-    vertical-align: middle;
     width: 30%;
   }
 }
