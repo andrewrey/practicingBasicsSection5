@@ -6,7 +6,11 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 0; }
+  margin: 0;
+  display: grid;
+  grid-template-rows: 3.5rem auto 8rem;
+  grid-template-areas: ".." "mn" "ft";
+  height: 100vh; }
 
 body::-webkit-scrollbar {
   width: 0; }
@@ -126,13 +130,13 @@ body::-webkit-scrollbar {
     color: #a1a1a1; }
 
 main {
-  margin-top: 3.5rem;
-  min-height: calc(100vh - 3.5rem - 8rem); }
+  grid-area: mn; }
 
 .main-footer {
   background-color: black;
   padding: 2rem;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  grid-area: ft; }
 
 .main-footer__links {
   margin: 0;

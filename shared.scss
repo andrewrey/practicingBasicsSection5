@@ -10,6 +10,13 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  display: grid;
+  grid-template-rows: 3.5rem auto 8rem;
+  grid-template-areas:
+    ".."
+    "mn"
+    "ft";
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -154,8 +161,10 @@ body::-webkit-scrollbar {
 
 // Main //
 main {
-  margin-top: 3.5rem;
-  min-height: calc(100vh - 3.5rem - 8rem);
+  grid-area: mn;
+  // grid-row: 2 / span 1;
+  // margin-top: 3.5rem;
+  // min-height: calc(100vh - 3.5rem - 8rem);
 }
 
 // Footer //
@@ -163,6 +172,8 @@ main {
   background-color: black;
   padding: 2rem;
   margin-top: 3rem;
+  // grid-row: 3 / span 1;
+  grid-area: ft;
 }
 
 .main-footer__links {
