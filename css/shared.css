@@ -8,7 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   display: grid;
-  grid-template-rows: 3.5rem auto 8rem;
+  grid-template-rows: 3.5rem auto fit-content(8rem);
   grid-template-areas: ".." "mn" "ft";
   height: 100vh; }
 
