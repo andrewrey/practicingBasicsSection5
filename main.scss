@@ -176,6 +176,13 @@
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+.preload {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 .modal__title {
   text-align: center;
   margin: 0 0 1rem 0;

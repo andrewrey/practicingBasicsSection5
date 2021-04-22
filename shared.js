@@ -7,6 +7,10 @@ const mobileNav = document.querySelector(".mobile-nav");
 
 // Functions //
 
+// remove preload class once window loads
+
+window.addEventListener("load", () => modal.classList.remove("preload"));
+
 // Close function
 
 const closeModal = () => {

@@ -164,14 +164,17 @@ main {
       margin: 0 1rem; } }
 
 .mobile-nav {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
   position: fixed;
   z-index: 101;
   top: 0;
   left: 0;
   background: white;
   width: 80%;
-  height: 100vh; }
+  height: 100vh;
+  transform: translateX(-25rem);
+  transition: transform 1s ease-out; }
 
 .mobile-nav__items {
   width: 90%;
