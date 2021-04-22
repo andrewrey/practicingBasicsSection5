@@ -35,7 +35,8 @@ main {
       border-left: 4px solid #0e4f1f; } }
   .packages:hover, .packages:active {
     border-color: #ff5454;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: move-up 400ms ease-out forwards; }
   .packages .packages__badge {
     position: absolute;
     top: 0;
@@ -93,3 +94,11 @@ main {
   background: white;
   font-size: 1.25rem;
   /* font=style font-variant font-weight font-size/line-height font-family*/ }
+
+@keyframes move-up {
+  0% {
+    transform: translateY(0);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+  100% {
+    transform: translateY(-15px);
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.5); } }

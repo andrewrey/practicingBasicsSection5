@@ -42,6 +42,7 @@ main {
   &:active {
     border-color: #ff5454;
     box-shadow: 2px 2px 4px rgba(black, 0.5);
+    animation: move-up 400ms ease-out forwards;
   }
   .packages__badge {
     position: absolute;
@@ -111,4 +112,16 @@ main {
   background: white;
   font-size: 1.25rem;
   /* font=style font-variant font-weight font-size/line-height font-family*/
+}
+
+@keyframes move-up {
+  0% {
+    transform: translateY(0);
+    box-shadow: 2px 2px 4px rgba(black, 0.5);
+  }
+
+  100% {
+    transform: translateY(-15px);
+    box-shadow: 8px 8px 12px rgba(black, 0.5);
+  }
 }
