@@ -218,7 +218,7 @@ main {
   width: 80%;
   height: 100vh;
   transform: translateX(-25rem);
-  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, opacity 1s;
 }
 
 .mobile-nav__items {
