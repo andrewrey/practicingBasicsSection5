@@ -5,11 +5,15 @@ const noButton = document.querySelector(".modal__actions button");
 const toggleButton = document.querySelector(".toggle-button");
 const mobileNav = document.querySelector(".mobile-nav");
 
+const ctaButton = document.querySelector(".main-nav__item--cta");
+
 // Functions //
 
 // remove preload class once window loads
 
-window.addEventListener("load", () => modal.classList.remove("preload"));
+window.addEventListener("load", () =>
+  modal ? modal.classList.remove("preload") : null
+);
 
 // Close function
 
@@ -50,3 +54,12 @@ toggleButton.addEventListener("click", () => {
   mobileNav.className += " open";
   backdrop.className += " open";
 });
+
+// cta button animation listener
+ctaButton.addEventListener("animationstart", (event) =>
+  console.log("Animation Started", event.target)
+);
+
+ctaButton.addEventListener("animationend", (event) =>
+  console.log("Animation Ended", event.target)
+);
