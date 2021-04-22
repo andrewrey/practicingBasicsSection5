@@ -118,6 +118,10 @@ body::-webkit-scrollbar {
   border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+  animation: wiggle 200ms 3s 8;
+}
+
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
@@ -245,4 +249,13 @@ main {
   pointer-events: auto;
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+@keyframes wiggle {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(10deg);
+  }
 }
