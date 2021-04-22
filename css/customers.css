@@ -2,7 +2,9 @@ main {
   padding-top: 2.5rem; }
 
 .testimonial {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  perspective: 900px;
+  transform-style: preserve-3d; }
   @media (min-width: 40rem) {
     .testimonial {
       margin: 3rem auto;
@@ -17,6 +19,8 @@ main {
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
   transform: skew(20deg);
   overflow: hidden; }
+  .testimonial__image-container:hover {
+    animation: flip 1000ms ease-out forwards; }
   @media (min-width: 40rem) {
     .testimonial__image-container {
       width: 63%; } }
@@ -59,3 +63,11 @@ main {
 
 .testimonial__text {
   margin: 0.2rem; }
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0) skew(20deg); }
+  50% {
+    transform: rotateX(160deg) skew(20deg); }
+  100% {
+    transform: rotateX(360deg) skew(20deg); } }
