@@ -189,4 +189,6 @@ main {
   font-size: 1.5rem; }
 
 .open {
-  display: block !important; }
+  display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important; }
