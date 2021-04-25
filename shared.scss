@@ -15,13 +15,20 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  display: grid;
-  grid-template-rows: 3.5rem auto fit-content(8rem);
-  grid-template-areas:
-    ".."
-    "mn"
-    "ft";
-  height: 100vh;
+  padding-top: 3.5rem;
+}
+
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-rows: 3.5rem auto fit-content(8rem);
+    grid-template-areas:
+      ".."
+      "mn"
+      "ft";
+    height: 100vh;
+    padding-top: 0;
+  }
 }
 
 body::-webkit-scrollbar {
