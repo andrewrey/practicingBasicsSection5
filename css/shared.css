@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+:root {
+  --dark-green: #0e4f1f;
+  --highlight-colour: #ff1b68; }
+
 * {
   box-sizing: border-box; }
 
@@ -40,7 +44,7 @@ body::-webkit-scrollbar {
   justify-content: space-between; }
 
 .main-header__brand {
-  color: #0e4f1f;
+  color: var(--dark-green);
   text-decoration: none;
   font-weight: bold; }
   .main-header__brand img {
@@ -87,7 +91,7 @@ body::-webkit-scrollbar {
 .main-nav__item a,
 .mobile-nav__item a {
   text-decoration: none;
-  color: #0e4f1f;
+  color: var(--dark-green);
   font-weight: bold;
   padding: 0.1875rem 0; }
 
@@ -102,7 +106,7 @@ body::-webkit-scrollbar {
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
-  background: #ff1b68;
+  background: var(--highlight-colour);
   padding: 0.5rem 1rem;
   border-radius: 8px; }
 
@@ -110,22 +114,22 @@ body::-webkit-scrollbar {
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
-  color: #ff1b68;
+  color: var(--highlight-colour);
   background: white;
   border: none; }
 
 .button {
-  background: #0e4f1f;
+  background: var(--dark-green);
   color: white;
   font: inherit;
   font-weight: bold;
-  border: 1.5px solid #0e4f1f;
+  border: 1.5px solid var(--dark-green);
   padding: 0.5rem;
   border-radius: 8px;
   cursor: pointer; }
   .button:hover, .button:active {
     background-color: white;
-    color: #0e4f1f; }
+    color: var(--dark-green); }
   .button:focus {
     outline: none; }
   .button[disabled] {
